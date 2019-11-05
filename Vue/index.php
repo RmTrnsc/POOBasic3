@@ -38,4 +38,4 @@ echo var_dump('APRES l\'ajout du skateboard', $skateboard).'<br><br>';
 $residential = new ResidentialWay();
 echo var_dump('AVANT l\'ajout du véhicule', $truck).'<br>';
 $residential->addVehicles($truck);
-echo var_dump('APRES l\'ajout du véhicule', $truck).'<br><br>';
+echo var_dump('APRES l\'ajout du véhicule', $truck).'<br>';

@@ -13,12 +13,12 @@ final class MotorWay extends HighWay
    */
   public $maxSpeed = 130;
 
-  public function addVehicles(Vehicle $vehicle)
+  public function addVehicles(Vehicle $car)
   {
-    $vehicles = $this -> getCurrentVehicles() ?? [];
-    if (!in_array($vehicle, $vehicles) && ($vehicle instanceof Car || $vehicle instanceof Truck)) {
-      array_push($vehicles, $vehicle);
-      $this -> setCurrentVehicles($vehicles);
+    $cars = $this -> getCurrentVehicles() ?? [];
+    if (!in_array($car, $cars) && ($car instanceof Car || $car instanceof Truck)) {
+      array_push($cars, $car);
+      $this -> setCurrentVehicles($cars);
     }
   }
 

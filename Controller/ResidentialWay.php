@@ -13,11 +13,11 @@ final class ResidentialWay extends HighWay
    */
   public $maxSpeed = 50;
 
-  public function addVehicles($Vehicle)
+  public function addVehicles($bikeSkate)
   {
     $vehicles = $this->getCurrentVehicles() ?? [];
-    if (!in_array($Vehicle, $vehicles))
-      array_push($vehicles, $Vehicle);
+    if (!in_array($bikeSkate, $vehicles))
+      array_push($vehicles, $bikeSkate);
     $this->setCurrentVehicles($vehicles);
   }
 }
